@@ -21,3 +21,16 @@ $ java -version
 
 # 2. SDK installation.
 
+# Setting nginx to listen & forward to node server 
+
+server {
+    listen       ...;
+    ...
+    location / {
+        proxy_pass http://127.0.0.1:8080;
+    }
+    ...
+}
+
+
+
